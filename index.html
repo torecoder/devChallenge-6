@@ -7,94 +7,196 @@
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
     />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
+    <link rel="icon" href="/images/devchallenges.png" />
+    <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
+    <!-- STYLE -->
     <link rel="stylesheet" href="style.css" />
     <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+    <main>
+      <section class="buy">
+        <div class="product-wrapper">
+          <div class="product">
+            <img src="./images/photo1.png" class="product__photo" alt="" />
+            <div class="product__info">
+              <div class="info-text">
+                <h2 class="info__title">Vintage Backbag</h2>
+                <div class="info">
+                  <p class="info__price">$54.99</p>
+                  <p class="info__price-before"><del>$94.99</del></p>
+                </div>
+              </div>
+              <div class="info-actions">
+                <span>-</span>
+                <p class="action-number">1</p>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./images/photo2.png" class="product__photo" alt="" />
+            <div class="product__info">
+              <div class="info-text">
+                <h2 class="info__title">Vintage Backbag</h2>
+                <div class="info">
+                  <p class="info__price">$54.99</p>
+                  <p class="info__price-before"><del>$94.99</del></p>
+                </div>
+              </div>
+              <div class="info-actions">
+                <span>-</span>
+                <p class="action-number">1</p>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="purchase-wrapper">
+          <div class="purchase__number">
+            <p class="number-title">Shipping</p>
+            <p class="number-digit">$19</p>
+          </div>
+          <div class="purchase__number">
+            <p class="number-title">Total</p>
+            <p class="number-digit">$148.98</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <form class="contact-info form">
+          <h3 class="form__title">Contact information</h3>
+          <label for="email" class="form-label">
+            <p class="form-label__title">E-mail</p>
+            <div class="box">
+            <i class="fas fa-envelope icon"></i>
+            <input
+              type="email"
+              class="form-label__input"
+              placeholder="Enter your email..."
+              id="email"
+            />
+          </div>
+          </label>
+          <label for="phone" class="form-label">
+            <p class="form-label__title">Phone</p>
+            <div class="box">
+              <i class="fas fa-phone-alt icon"></i>
+            <input
+              type="tel"
+              class="form-label__input"
+              placeholder="Enter your phone..."
+              id="phone"
+            />
+          </label>
+        </div>
+        </form>
+        <form class="shipping-info form">
+          <h3 class="form__title">Shipping address</h3>
+          <div class="shipping-grid">
+          <label for="name" class="form-label shipping-label">
+            <p class="form-label__title">Full name</p>
+            <div class="box">
+              <i class="fas fa-user-circle icon"></i>
+            <input
+              type="text"
+              class="form-label__input"
+              placeholder="Enter your name..."
+              id="name"
+            />
+          </div>
+          </label>
+          <label for="addres" class="form-label shipping-label">
+            <p class="form-label__title">Addres</p>
+            <div class="box">
+              <i class="fas fa-home icon"></i>
+            <input
+              type="text"
+              class="form-label__input"
+              placeholder="Enter your addres..."
+              id="addres"
+            />
+          </div>
+          </label>
+          <label for="city" class="form-label shipping-label">
+            <p class="form-label__title">City</p>
+            <div class="box">
+              <i class="fas fa-city icon"></i>
+            <input
+              type="text"
+              class="form-label__input"
+              placeholder="Enter your city..."
+              id="city"
+            />
+          </div>
+          </label>
+          <label for="country" class="form-label shipping-label">
+            <p class="form-label__title">Country</p>
+            <div class="box">
+              <i class="fas fa-globe-americas icon"></i>
+            <input
+              type="text"
+              class="form-label__input"
+              placeholder="Your country..."
+              id="country"
+            />
+          </div>
+          </label>
+          <label for="postal" class="form-label shipping-label">
+            <p class="form-label__title">Postal code</p>
+            <div class="box">
+              <i class="fas fa-inbox icon"></i>
+              <input
+                type="number"
+                class="form-label__input"
+                placeholder="Your postal code..."
+                id="postal"
+              />
+            </div>
+          </label>
+        </div>
+          <label for="confirm" class="form-label checkbox">
+            <input
+              type="checkbox"
+              class="form-label__input checkbox__input"
+              id="confirm"
+            />
+            <p class="checkbox__text">Save this information for next time</p>
+          </label>
+          <div class="shipping-grid">
+          <label for="send" class="form-label btn">
+            <input
+              type="submit"
+              class="form-label__input btn__input"
+              id="send"
+              value="Continue"
+            />
+          </label>
+        </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        created by
+        <a href="https://github.com/torecoder" target="_blank">@torecoder</a>
+        - devChallenges.io
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b09ffafba5.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
