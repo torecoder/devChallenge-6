@@ -95,6 +95,15 @@ header h1 {
   border-radius: 12px;
 }
 
+.info-actions .action-number {
+  width: 60px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .info-actions span {
   text-align: center;
   font-size: 24px;
@@ -102,6 +111,7 @@ header h1 {
   background-color: var(--light-gray);
   width: 30px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .action-number {

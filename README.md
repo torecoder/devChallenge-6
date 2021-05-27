@@ -44,7 +44,7 @@
 
 - [HTML]
 - [CSS]
-- [JS] (soon)
+- [JS]
 
 ## Features
 
